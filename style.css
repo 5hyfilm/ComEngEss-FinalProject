@@ -1,0 +1,46 @@
+@import url('https://fonts.googleapis.com/css2?family=Prompt:wght@200&display=swap');
+
+* {
+    box-sizing: border-box;
+    font-family: 'Prompt', sans-serif;
+}
+
+body {margin: 0;
+    background-color: #282828;
+}
+
+div h2{
+    color: #F0c330;
+}
+
+div p{
+    color: white;
+}
+
+ul.sidenav {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  width: 15%;
+  background-color: black;
+  position: fixed;
+  height: 100%;
+  overflow: auto;
+}
+
+ul.sidenav li a {
+  display: block;
+  color: white;
+  padding: 8px 16px;
+  text-decoration: none;
+}
+ 
+ul.sidenav li a.active {
+  background-color: #F0c330;
+  color: black;
+}
+
+ul.sidenav li a:hover:not(.active) {
+background-color: #555;
+color: white;
+}
