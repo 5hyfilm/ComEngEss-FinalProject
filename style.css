@@ -1,20 +1,21 @@
-@import url('https://fonts.googleapis.com/css2?family=Prompt:wght@200&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Prompt:wght@200&display=swap");
 
 * {
-    box-sizing: border-box;
-    font-family: 'Prompt', sans-serif;
+  box-sizing: border-box;
+  font-family: "Prompt", sans-serif;
 }
 
-body {margin: 0;
-    background-color: #282828;
+body {
+  margin: 0;
+  background-color: #282828;
 }
 
-div h2{
-    color: #F0c330;
+div h2 {
+  color: #f0c330;
 }
 
-div p{
-    color: white;
+div p {
+  color: white;
 }
 
 ul.sidenav {
@@ -34,15 +35,15 @@ ul.sidenav li a {
   padding: 8px 16px;
   text-decoration: none;
 }
- 
+
 ul.sidenav li a.active {
-  background-color: #F0c330;
+  background-color: #f0c330;
   color: black;
 }
 
 ul.sidenav li a:hover:not(.active) {
-background-color: #555;
-color: white;
+  background-color: #555;
+  color: white;
 }
 
 div.content {
@@ -57,13 +58,15 @@ div.content {
     height: auto;
     position: relative;
   }
-  
+
   ul.sidenav li a {
     float: left;
     padding: 15px;
   }
-  
-  div.content {margin-left: 0;}
+
+  div.content {
+    margin-left: 0;
+  }
 }
 
 @media screen and (max-width: 400px) {
@@ -71,4 +74,59 @@ div.content {
     text-align: center;
     float: none;
   }
+}
+
+/* TABLE */
+table,
+th,
+td {
+  border: 1px solid black;
+}
+
+#member-list {
+  margin: 0;
+  font-size: 0.8em;
+}
+#main-table {
+  padding: 0;
+  width: 100%;
+  background: #eee;
+  border-radius: 8px;
+  box-shadow: 1px 1px 1px 0 rgba(0, 0, 0, 0.1);
+  border-collapse: collapse;
+  overflow: hidden;
+}
+#main-table > thead {
+  background: #555;
+  color: white;
+}
+#main-table > thead > tr > th {
+  font-weight: lighter;
+  text-align: center;
+}
+#main-table td,
+#main-table th {
+  padding: 5px 10px;
+  font-weight: lighter;
+}
+#item-to-add,
+#name-to-add,
+#price-to-add {
+  padding: 5px 10px;
+  border-radius: 8px;
+  border: 1px solid #aaa;
+}
+.delete-row,
+#add-newrow {
+  border-radius: 8px;
+  padding: 5px 5px;
+  border: 1px solid #aaa;
+  background: white;
+  width: 60px;
+  cursor: pointer;
+}
+.delete-row:hover,
+#add-newrow:hover {
+  background: rgb(255, 200, 105);
+  color: white;
 }
