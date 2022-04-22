@@ -1,118 +1,118 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css" />
-    <script src="script.js"></script>
-  </head>
-  <body>
-    <!-- SIDENAV START -->
-    <ul class="sidenav">
-      <li><a href="#home" class="active">HOME</a></li>
-      <li><a href="#music" class="">MUSIC</a></li>
-      <li><a href="#todolist" class="">TODO LIST</a></li>
-      <li><a href="#timer" class="">TIMER</a></li>
-      <li><a href="#start" class="">START</a></li>
-    </ul>
-    <!-- SIDENAV END -->
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        <script src="script.js"></script>
+    </head>
+    <body>
+        <!-- SIDENAV START -->
+        <ul class="sidenav">
+            <li><a href="#home" class="active">HOME</a></li>
+            <li><a href="#music" class="">MUSIC</a></li>
+            <li><a href="#todolist" class="">TODO LIST</a></li>
+            <li><a href="#timer" class="">TIMER</a></li>
+            <li><a href="#start" class="">START</a></li>
+        </ul>
+        <!-- SIDENAV END -->
 
-    <!-- HOME START -->
-    <div class="content" id="home">
-      <h2>HOME</h2>
-      <p>Virtual study and work spaces from CU Intania 105 - CP 48</p>
-    </div>
-    <!-- HOME END -->
+        <!-- HOME START -->
+        <div class="content" id="home">
+            <h2>HOME</h2>
+            <p>Virtual study and work spaces from CU Intania 105 - CP 48</p>
+        </div>
+        <!-- HOME END -->
 
-    <!-- MUSIC START -->
-    <div class="content" id="music">
-      <h2>MUSIC</h2>
-      <p>Listen some music while doing the task.</p>
-      <div class="row">
-        <div class="column">
-          <iframe
-            style="border-radius: 12px"
-            src="https://open.spotify.com/embed/playlist/37i9dQZF1DWWGzo2lhvYlP?utm_source=generator"
-            width="100%"
-            height="380"
-            frameborder="0"
-            allowfullscreen=""
-            allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
-          ></iframe>
+        <!-- MUSIC START -->
+        <div class="content" id="music">
+            <h2>MUSIC</h2>
+            <p>Listen some music while doing the task.</p>
+            <div class="row">
+                <div class="column">
+                    <iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/37i9dQZF1DWWGzo2lhvYlP?utm_source=generator" width="100%" height="380" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
+                </div>
+                <div class="column">
+                    <iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/37i9dQZF1DWWQRwui0ExPn?utm_source=generator" width="100%" height="380" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
+                </div>
+                <div class="column">
+                    <iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/37i9dQZF1DX9sIqqvKsjG8?utm_source=generator" width="100%" height="380" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
+                </div>
+            </div>
         </div>
-        <div class="column">
-          <iframe
-            style="border-radius: 12px"
-            src="https://open.spotify.com/embed/playlist/37i9dQZF1DWWQRwui0ExPn?utm_source=generator"
-            width="100%"
-            height="380"
-            frameborder="0"
-            allowfullscreen=""
-            allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
-          ></iframe>
-        </div>
-        <div class="column">
-          <iframe
-            style="border-radius: 12px"
-            src="https://open.spotify.com/embed/playlist/37i9dQZF1DX9sIqqvKsjG8?utm_source=generator"
-            width="100%"
-            height="380"
-            frameborder="0"
-            allowfullscreen=""
-            allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
-          ></iframe>
-        </div>
-      </div>
-    </div>
-    <!-- MUSIC END -->
+        <!-- MUSIC END -->
 
-    <!-- TODO LIST START -->
-    <div class="content" id="todolist">
-      <h2>TODO LIST</h2>
-      <p>Add your task</p>
-      <table id="main-table" style="width: 100%">
-        <thead>
-          <tr>
-            <th>NAME</th>
-            <th>TASK</th>
-            <th>TIME</th>
-            <th>OPERATION</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>Example 1</td>
-            <td>Homework</td>
-            <td>60</td>
-            <td>
-              <button id="add-newrow" onclick="deleteRow(this)">Remove</button>
-            </td>
-          </tr>
-        </tbody>
-        <tfoot>
-          <tr>
-            <td><input id="item-to-add" /></td>
-            <td>
-              <form>
-                <select id="type-to-add">
-                  <option>
-                    <p></p>
-                    --Choose type of a task--
-                  </option>
-                  <option value="Homework">Homework</option>
-                  <option value="Project">Project</option>
-                  <option value="Reading">Reading</option>
-                  
-                </select>
-              </form>
-            </td>
-            <td><input type="number" id="time-to-add" /></td>
-            <td>
-              <button id="add-newrow" onclick="myFunction();">Add</button>
-            </td>
-          </tr>
-        </tfoot>
-      </table>
-    </div>
-    <!-- TODO LIST END -->
-  </body>
+        <!-- TODO LIST START -->
+        <div class="content" id="todolist">
+            <h2>TODO LIST</h2>
+            <p>Add your task</p>
+            <table id="main-table" style="width:100%">
+                <thead>
+                    <tr>
+                        <th>NAME</th>
+                        <th>TASK</th>
+                        <th>TIME</th>
+                        <th>OPERATION</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Example 1</td>
+                        <td>Homework</td>
+                        <td>60</td>
+                        <td><button id="add-newrow" onclick="deleteRow(this)">Remove</button></td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <td><input id="item-to-add"></td>
+                        <td>
+                            <form>
+                                <select id="type-to-add">
+                                    <option><p></p>--Choose type of a task--</option>
+                                    <option value="Homework">Homework</option>
+                                    <option value="Project">Project</option>
+                                    <option value="Reading">Reading</option>
+                                </select>
+                            </form>
+                        </td>
+                        <td><input type="number" id="time-to-add"></td>
+                        <td><button id="add-newrow" onclick="myFunction();">Add</button></td>
+                    </tr>
+                </tfoot>
+            </table>
+        </div>
+        <!-- TODO LIST END -->
+
+        <!-- TIMER START -->
+        <div class="content" id="timer" value="50">
+            <h2>TIMER</h2>
+            <p>Set time</p>
+            <form>
+                <input type="number" id="customtime" value="40">
+                <button onclick="add()" id="customtime">Add</button>
+            </form>
+            
+
+            <br>
+            <center>
+                <div>
+                    <p>Time left: </p> <span id="time"></span> <p>minutes!</p>
+                </div>
+                <input type="button" value="Reset" onclick="resetTimer()" />
+                <input type="button" value="Start" onclick="starter()" />
+            </center>
+        </div>
+        <!-- TIMER END -->
+        
+        <!-- START START -->
+        <div class="content" id="start">
+            <h2>START</h2>
+            <p>We hope you enjoy working :-)</p>
+            <button onclick="openFullscreen();">Press F to fullscreen</button>
+            <video id="myvdo" width="100%" autoplay loop muted>
+                <source src="movie.mp4" type="video/mp4">
+            </video>
+        </div>
+        <!-- START END -->
+    </body>
 </html>
