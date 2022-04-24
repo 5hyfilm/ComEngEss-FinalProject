@@ -9,9 +9,9 @@
         <!-- SIDENAV START -->
         <ul class="sidenav">
             <li><a href="#home" class="active">HOME</a></li>
-            <li><a href="#music" class="">MUSIC</a></li>
+            <li><a href="#sound" class="">SOUND</a></li>
             <li><a href="#todolist" class="">TODO LIST</a></li>
-            <li><a href="#timer" class="">TIMER</a></li>
+            <li><a href="#clock" class="">TIMER</a></li>
             <li><a href="#start" class="">START</a></li>
         </ul>
         <!-- SIDENAV END -->
@@ -23,10 +23,11 @@
         </div>
         <!-- HOME END -->
 
-        <!-- MUSIC START -->
-        <div class="content" id="music">
-            <h2>MUSIC</h2>
+        <!-- SOUND START -->
+        <div class="content" id="sound">
+            <h2>SOUND</h2>
             <p>Listen some music while doing the task.</p>
+            <p>There have been researches that have found The noise level in a coffee shop at 70 decibels can motivate our work. Compared to working in an environment with a noise level of 50 decibels.</p>
             <div class="row">
                 <div class="column">
                     <iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/37i9dQZF1DWWGzo2lhvYlP?utm_source=generator" width="100%" height="380" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
@@ -39,7 +40,7 @@
                 </div>
             </div>
         </div>
-        <!-- MUSIC END -->
+        <!-- SOUND END -->
 
         <!-- TODO LIST START -->
         <div class="content" id="todolist">
@@ -83,26 +84,31 @@
         </div>
         <!-- TODO LIST END -->
 
-        <!-- TIMER START -->
-        <div class="content" id="timer" value="50">
+        <!-- CLOCK START -->
+        <div class="content" id="clock">
             <h2>TIMER</h2>
             <p>Set time</p>
-            <form>
-                <input type="number" id="customtime" value="40">
-                <button onclick="add()" id="customtime">Add</button>
-            </form>
-            
-
             <br>
-            <center>
-                <div>
-                    <p>Time left: </p> <span id="time"></span> <p>minutes!</p>
+            <div id="pomodoro-app">
+                <div id="container">
+                    <div id="timer">
+                        <div id="time">
+                            <span id="minutes">25</span>
+                            <span id="colon">:</span>
+                            <span id="seconds">00</span>
+                        </div>
+                        <div id="filler"></div>
+                    </div>
+                    <div id="buttons">
+                        <button id="work">Work</button>
+                        <button id="shortBreak">Short Break</button>
+                        <button id="longBreak">Long Break</button>
+                        <button id="stop">Stop</button>
+                    </div>
                 </div>
-                <input type="button" value="Reset" onclick="resetTimer()" />
-                <input type="button" value="Start" onclick="starter()" />
-            </center>
+            </div>
         </div>
-        <!-- TIMER END -->
+        <!-- CLOCK END -->
         
         <!-- START START -->
         <div class="content" id="start">
