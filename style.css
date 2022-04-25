@@ -26,6 +26,10 @@ div a{
   color: white;
 }
 
+li {
+  color: white;
+}
+
 ul.sidenav {
   list-style-type: none;
   margin: 0;
