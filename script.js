@@ -1,4 +1,3 @@
-<<<<<<< Updated upstream
 // TABLE FUNCTION
 function myFunction() { //on click event
     var name = document.getElementById("item-to-add").value; //ชื่อสิ่งของ
