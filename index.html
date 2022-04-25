@@ -1,7 +1,10 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>247CHAMBER</title>
+        <link rel="icon" type="image/png" sizes="72x72" href="img/logo.png">
         <link rel="stylesheet" href="style.css">
         <script src="script.js"></script>
     </head>
@@ -20,8 +23,10 @@
         <!-- ABOUT START -->
         <div class="content" id="about">
             <h1>ABOUT</h1>
-            <p>247CHAMBER is a web application work spaces. It can make you more productivity and </p>
-            <img src="247chamber.jpg">
+            <p>Covid-19 makes it difficult for us to go to the library to read books, so we developed this web application.</p>
+            <p>247CHAMBER is a web application that virtualize mood from CU library.</p>
+            <p>This web application provide you many tools can make you more productivity and focus.</p>
+            <img src="img/247chamber.jpg">
         </div>
         <!-- ABOUT END -->
 
@@ -30,13 +35,12 @@
             <h1>SOUND</h1>
             <p>Listen some music while doing the task.</p>
             <p>There have been researches that have found The noise level in a coffee shop at 70 decibels can motivate our work. Compared to working in an environment with a noise level of 50 decibels.</p>
-            
-            <h4>References</h4>
+            <br>
+            <p>References</p>
             <ul>
                 <li style="color: white;"><p><a href="https://www.jstor.org/stable/10.1086/665048?seq=1">Visit "Is Noise Always Bad? Exploring the Effects of Ambient Noise on Creative Cognition"</a></p></li>
                 <li style="color: white;"><p><a href="https://well.blogs.nytimes.com/2013/06/21/how-the-hum-of-a-coffee-shop-can-boost-creativity/">Visit "How the Hum of a Coffee Shop Can Boost Creativity"</a></p></li>
-            </ul>  
-
+            </ul>
             <div class="row">
                 <div class="column">
                     <iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/37i9dQZF1DWWGzo2lhvYlP?utm_source=generator" width="100%" height="380" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
@@ -54,7 +58,7 @@
         <!-- TODO LIST START -->
         <div class="content" id="todolist">
             <h1>TODO LIST</h1>
-            <p>Add your task</p>
+            <p>Add your task right here</p>
             <table id="main-table" style="width:100%">
                 <thead>
                     <tr>
@@ -96,8 +100,10 @@
         <!-- CLOCK START -->
         <div class="content" id="clock">
             <h1>TIMER</h1>
+            <p>This web application supports voice commands using <a href="https://developer.mozilla.org/en-US/docs/Web/API/Web_Speech_API">Web Speech API</a>, so you can use Speech Recognition.</p>
             <h2>What is the Pomodoro Technique?</h2>
             <p>The Pomodoro Technique was developed in the late 1980s by then university student Francesco Cirillo. Cirillo was struggling to focus on his studies and complete assignments. Feeling overwhelmed, he asked himself to commit to just 10 minutes of focused study time. Encouraged by the challenge, he found a tomato (pomodoro in Italian) shaped kitchen timer, and the Pomodoro technique was born.</p>
+            <p><a href="https://todoist.com/productivity-methods/pomodoro-technique">For more info</a>
             <br>
             <div id="pomodoro-app">
                 <div id="container">
@@ -123,22 +129,24 @@
         <!-- CHAMBER START -->
         <div class="content" id="chamber">
             <h1>CHAMBER</h1>
-            <p>We hope you enjoy working :-)</p>
             <p>You can choose the background.</p>
+            <p>We hope you enjoy working :-)</p>
             <center>
                 <div>
-                    <button id="btn1">1</button>
-                    <button id="btn2">2</button>
-                    <button id="btn3">3</button>
-                    <button id="btn4">4</button>
-                    <button id="btn5">5</button>
+                    <button onclick="document.querySelector('#bg-img').src='img/background/bg1.jpeg'">1</button>
+                    <button onclick="document.querySelector('#bg-img').src='img/background/bg2.jpg'">2</button>
+                    <button onclick="document.querySelector('#bg-img').src='img/background/bg3.jpg'">3</button>
+                    <button onclick="document.querySelector('#bg-img').src='img/background/bg4.jpg'">4</button>
+                    <button onclick="document.querySelector('#bg-img').src='img/background/bg5.jpeg'">5</button>
+                    <br><br>
+                    <button onclick="toggleFullScreen();">Press enter/return to fullscreen</button>
                 </div>
             </center>
-            <button onclick="openFullscreen();">Press enter/return to fullscreen</button>
+            <br>
             <!-- <video id="myvdo" width="100%" autoplay loop muted>
                 <source src="movie.mp4" type="video/mp4">
             </video> -->
-            <img id="bg-img" src="background/bg1.jpeg">
+            <img id="bg-img" src="img/background/bg1.jpeg">
         </div>
         <!-- CHAMBER END -->
     </body>

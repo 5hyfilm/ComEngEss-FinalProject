@@ -31,6 +31,31 @@ function myFunction() { //on click event
   }
 
 
+// CHANGE CHAMBER
+// window.onload = function(){
+//   let img = document.querySelector('#bg-img');
+//   let btn1 = document.querySelector('#btn1');
+//   let btn2 = document.querySelector('#btn2');
+//   let btn3 = document.querySelector('#btn3');
+//   let btn4 = document.querySelector('#btn4');
+//   let btn5 = document.querySelector('#btn5');
+
+//   btn1.addEventListener('click', () => {
+//     img.src = 'background/bg1.jpeg';
+//   })
+//   btn2.addEventListener('click', () => {
+//     img.src = 'background/bg2.jpg';
+//   })
+//   btn3.addEventListener('click', () => {
+//     img.src = 'background/bg3.jpg';
+//   })
+//   btn4.addEventListener('click', () => {
+//     img.src = 'background/bg4.jpg';
+//   })
+//   btn5.addEventListener('click', () => {
+//     img.src = 'background/bg5.jpeg';
+//   })
+// }
 
 // POMODORO
 var pomodoro = {
@@ -120,7 +145,6 @@ window.onload = function(){
 };
 
 
-
 // SPEECH
 const recognition = new webkitSpeechRecognition();
 recognition.continuous = true;
@@ -158,35 +182,6 @@ recognition.addEventListener('result', function(event){
 });
 
 recognition.start()
-
-
-
-// CHANGE BACKGROUND
-window.onload = function(){
-  let img = document.querySelector('#bg-img');
-  let btn1 = document.querySelector('#btn1');
-  let btn2 = document.querySelector('#btn2');
-  let btn3 = document.querySelector('#btn3');
-  let btn4 = document.querySelector('#btn4');
-  let btn5 = document.querySelector('#btn5');
-
-  btn1.addEventListener('click', () => {
-    img.src = 'background/bg1.jpeg';
-  })
-  btn2.addEventListener('click', () => {
-    img.src = 'background/bg2.jpg';
-  })
-  btn3.addEventListener('click', () => {
-    img.src = 'background/bg3.jpg';
-  })
-  btn4.addEventListener('click', () => {
-    img.src = 'background/bg4.jpg';
-  })
-  btn5.addEventListener('click', () => {
-    img.src = 'background/bg5.jpeg';
-  })
-}
-
 
 
 // FULLSCREEN
