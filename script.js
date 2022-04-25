@@ -116,3 +116,62 @@ var pomodoro = {
 window.onload = function(){
   pomodoro.init();
 };
+
+
+// SPEECH
+const recognition = new webkitSpeechRecognition();
+recognition.continuous = true;
+recognition.interimResults = true;
+
+recognition.addEventListener('result', function(event){
+    const text = Array.from(event.results)
+    .map(result=>result[0])
+    .map(result=>result.transcript)
+
+    let last = text[Object.keys(text)[Object.keys(text).length - 1]];
+
+    console.log(last);
+
+    if (last == "work"){
+        console.log(last);
+        console.log("0");
+        document.querySelector('#work').click();
+    }
+    else if(last == "short break"){
+        console.log(last);
+        console.log("1");
+        document.querySelector('#shortBreak').click();
+    }
+    else if(last == "long break"){
+        console.log(last);
+        console.log("2");
+        document.querySelector('#longBreak').click();
+    }
+    else if(last == "stop"){
+        console.log(last);
+        console.log("3");
+        document.querySelector('#stop').click();
+    }
+});
+
+recognition.start()
+
+
+
+
+// FULLSCREEN
+document.addEventListener("keydown", function(e) {
+    if (e.keyCode === 13) {     // keyCode = 13 = Enter
+      toggleFullScreen();
+    }
+  }, false);
+
+function toggleFullScreen() {
+    if (!document.fullscreenElement) {
+        document.documentElement.requestFullscreen();
+    } else {
+      if (document.exitFullscreen) {
+        document.exitFullscreen();
+      }
+    }
+}
