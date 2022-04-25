@@ -8,21 +8,22 @@
     <body>
         <!-- SIDENAV START -->
         <ul class="sidenav">
-            <li><a href="#about" class="active">VirtualStudy</a></li>
+            <li><a href="#home" class="active">247CHAMBER</a></li>
             <li><a href="#about" class="">ABOUT</a></li>
             <li><a href="#sound" class="">SOUND</a></li>
             <li><a href="#todolist" class="">TODO LIST</a></li>
             <li><a href="#clock" class="">TIMER</a></li>
-            <li><a href="#start" class="">START</a></li>
+            <li><a href="#chamber" class="">CHAMBER</a></li>
         </ul>
         <!-- SIDENAV END -->
 
-        <!-- HOME START -->
+        <!-- ABOUT START -->
         <div class="content" id="about">
             <h1>ABOUT</h1>
-            <p>Virtual study and work spaces from CU Intania 105 - CP 48</p>
+            <p>247CHAMBER is a web application work spaces. It can make you more productivity and </p>
+            <img src="247chamber.jpg">
         </div>
-        <!-- HOME END -->
+        <!-- ABOUT END -->
 
         <!-- SOUND START -->
         <div class="content" id="sound">
@@ -35,7 +36,6 @@
                 <li style="color: white;"><p><a href="https://www.jstor.org/stable/10.1086/665048?seq=1">Visit "Is Noise Always Bad? Exploring the Effects of Ambient Noise on Creative Cognition"</a></p></li>
                 <li style="color: white;"><p><a href="https://well.blogs.nytimes.com/2013/06/21/how-the-hum-of-a-coffee-shop-can-boost-creativity/">Visit "How the Hum of a Coffee Shop Can Boost Creativity"</a></p></li>
             </ul>  
-
 
             <div class="row">
                 <div class="column">
@@ -120,15 +120,26 @@
         </div>
         <!-- CLOCK END -->
         
-        <!-- START START -->
-        <div class="content" id="start">
-            <h1>START</h1>
+        <!-- CHAMBER START -->
+        <div class="content" id="chamber">
+            <h1>CHAMBER</h1>
             <p>We hope you enjoy working :-)</p>
-            <button onclick="openFullscreen();">Press F to fullscreen</button>
-            <video id="myvdo" width="100%" autoplay loop muted>
+            <p>You can choose the background.</p>
+            <center>
+                <div>
+                    <button id="btn1">1</button>
+                    <button id="btn2">2</button>
+                    <button id="btn3">3</button>
+                    <button id="btn4">4</button>
+                    <button id="btn5">5</button>
+                </div>
+            </center>
+            <button onclick="openFullscreen();">Press enter/return to fullscreen</button>
+            <!-- <video id="myvdo" width="100%" autoplay loop muted>
                 <source src="movie.mp4" type="video/mp4">
-            </video>
+            </video> -->
+            <img id="bg-img" src="background/bg1.jpeg">
         </div>
-        <!-- START END -->
+        <!-- CHAMBER END -->
     </body>
 </html>

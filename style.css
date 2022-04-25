@@ -214,3 +214,9 @@ table, th, td {
 #buttons button#stop{
   background : #f00;
 }
+
+img {
+  display: block;
+  width: 100%;
+  margin: auto;
+}
