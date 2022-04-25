@@ -147,6 +147,7 @@ window.onload = function(){
 
 // SPEECH
 const recognition = new webkitSpeechRecognition();
+recognition.lang = 'en-EN'
 recognition.continuous = true;
 recognition.interimResults = true;
 
