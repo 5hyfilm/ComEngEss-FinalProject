@@ -31,31 +31,6 @@ function myFunction() { //on click event
   }
 
 
-// CHANGE CHAMBER
-// window.onload = function(){
-//   let img = document.querySelector('#bg-img');
-//   let btn1 = document.querySelector('#btn1');
-//   let btn2 = document.querySelector('#btn2');
-//   let btn3 = document.querySelector('#btn3');
-//   let btn4 = document.querySelector('#btn4');
-//   let btn5 = document.querySelector('#btn5');
-
-//   btn1.addEventListener('click', () => {
-//     img.src = 'background/bg1.jpeg';
-//   })
-//   btn2.addEventListener('click', () => {
-//     img.src = 'background/bg2.jpg';
-//   })
-//   btn3.addEventListener('click', () => {
-//     img.src = 'background/bg3.jpg';
-//   })
-//   btn4.addEventListener('click', () => {
-//     img.src = 'background/bg4.jpg';
-//   })
-//   btn5.addEventListener('click', () => {
-//     img.src = 'background/bg5.jpeg';
-//   })
-// }
 
 // POMODORO
 var pomodoro = {
@@ -85,7 +60,7 @@ var pomodoro = {
       document.querySelector('#longBreak').onclick = function(){
         self.startLongBreak.apply(self);
       };
-      document.querySelector('#stop').onclick = function(){
+      document.querySelector('#reset').onclick = function(){
         self.stopTimer.apply(self);
       };
     },
@@ -145,6 +120,7 @@ window.onload = function(){
 };
 
 
+
 // SPEECH
 const recognition = new webkitSpeechRecognition();
 recognition.lang = 'en-EN'
@@ -162,27 +138,28 @@ recognition.addEventListener('result', function(event){
 
     if (last == "work"){
         console.log(last);
-        console.log("0");
+        // console.log("0");
         document.querySelector('#work').click();
     }
     else if(last == "short break"){
         console.log(last);
-        console.log("1");
+        // console.log("1");
         document.querySelector('#shortBreak').click();
     }
     else if(last == "long break"){
         console.log(last);
-        console.log("2");
+        // console.log("2");
         document.querySelector('#longBreak').click();
     }
-    else if(last == "stop"){
+    else if(last == "reset"){
         console.log(last);
-        console.log("3");
-        document.querySelector('#stop').click();
+        // console.log("3");
+        document.querySelector('#reset').click();
     }
 });
 
 recognition.start()
+
 
 
 // FULLSCREEN
