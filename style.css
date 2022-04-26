@@ -164,10 +164,10 @@ table, th, td {
 }
 
 #timer{ 
-  color:(245, 183, 64); 
+  color:rgb(245, 183, 64); 
   font-size:50px; 
   margin:10px auto;
-  border : 5px solid (245, 183, 64);
+  border : 5px solid rgb(245, 183, 64);
   border-radius:50%;
   width:200px;
   height:200px;
