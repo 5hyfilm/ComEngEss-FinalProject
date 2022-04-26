@@ -1,270 +1,160 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>247CHAMBER</title>
-    <link rel="icon" type="image/png" sizes="72x72" href="img/logo.png" />
-    <link rel="stylesheet" href="style.css" />
-    <script src="script.js"></script>
-  </head>
-  <body>
-    <!-- SIDENAV START -->
-    <ul class="sidenav">
-      <li><a href="#home" class="active">247CHAMBER</a></li>
-      <li><a href="#about" class="">ABOUT</a></li>
-      <li><a href="#sound" class="">SOUND</a></li>
-      <li><a href="#todolist" class="">TODO LIST</a></li>
-      <li><a href="#clock" class="">TIMER</a></li>
-      <li><a href="#chamber" class="">CHAMBER</a></li>
-    </ul>
-    <!-- SIDENAV END -->
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>247VirtualSpaces</title>
+        <link rel="icon" type="image/png" sizes="72x72" href="img/logo.png">
+        <link rel="stylesheet" href="style.css">
+        <script src="script.js"></script>
+    </head>
+    <body>
+        <!-- SIDENAV START -->
+        <ul class="sidenav">
+            <li><a href="#home" class="active">247VirtualSpaces</a></li>
+            <li><a href="#about" class="">ABOUT</a></li>
+            <li><a href="#sound" class="">SOUND</a></li>
+            <li><a href="#todolist" class="">TODO LIST</a></li>
+            <li><a href="#clock" class="">TIMER</a></li>
+            <li><a href="#spaces" class="">SPACES</a></li>
+        </ul>
+        <!-- SIDENAV END -->
 
-    <!-- ABOUT START -->
-    <div class="content" id="about">
-      <h1>ABOUT</h1>
-      <ul>
-        <li>
-          <p>
-            Covid-19 makes it difficult for us to go to the library to read
-            books, so we developed this web application.
-          </p>
-        </li>
-        <li>
-          <p>
-            247CHAMBER is a web application that virtualize mood from CU
-            library.
-          </p>
-        </li>
-        <li>
-          <p>
-            This web application provide you many tools can make you more
-            productivity and focus.
-          </p>
-        </li>
-      </ul>
-      <img src="img/247chamber.jpg" />
-    </div>
-    <!-- ABOUT END -->
-
-    <!-- SOUND START -->
-    <div class="content" id="sound">
-      <h1>SOUND</h1>
-      <h2>Cafe background sound</h2>
-      <p>
-        There have been researches that have found The noise level in a coffee
-        shop at 70 decibels can motivate our work. Compared to working in an
-        environment with a noise level of 50 decibels.
-      </p>
-      <center>
-        <figcaption>
-          Listen to the Cafe background sound (it loops automatically.)
-        </figcaption>
-        <audio src="bgm.mp3" controls autoplay loop></audio>
-      </center>
-      <p>References</p>
-      <ul>
-        <li>
-          <p>
-            <a href="https://www.jstor.org/stable/10.1086/665048?seq=1"
-              >Visit "Is Noise Always Bad? Exploring the Effects of Ambient
-              Noise on Creative Cognition"</a
-            >
-          </p>
-        </li>
-        <li>
-          <p>
-            <a
-              href="https://well.blogs.nytimes.com/2013/06/21/how-the-hum-of-a-coffee-shop-can-boost-creativity/"
-              >Visit "How the Hum of a Coffee Shop Can Boost Creativity"</a
-            >
-          </p>
-        </li>
-      </ul>
-      <br />
-      <h2>Music</h2>
-      <p>Listen some music while doing the task.</p>
-      <div class="row">
-        <div class="column">
-          <iframe
-            style="border-radius: 12px"
-            src="https://open.spotify.com/embed/playlist/37i9dQZF1DWWGzo2lhvYlP?utm_source=generator"
-            width="100%"
-            height="380"
-            frameborder="0"
-            allowfullscreen=""
-            allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
-          ></iframe>
+        <!-- ABOUT START -->
+        <div class="content" id="about">
+            <h1>ABOUT</h1>
+            <ul>
+                <li><p>Covid-19 makes it difficult for us to go to the library to read books, so we developed this web application.</p></li>
+                <li><p>247VirtualSpaces is a web application that virtualize mood from CU library.</p></li>
+                <li><p>This web application provide you many tools can make you more productivity and focus.</p></li>
+            </ul>
+            <img src="img/247VirtualSpaces.jpg">
         </div>
-        <div class="column">
-          <iframe
-            style="border-radius: 12px"
-            src="https://open.spotify.com/embed/playlist/37i9dQZF1DWWQRwui0ExPn?utm_source=generator"
-            width="100%"
-            height="380"
-            frameborder="0"
-            allowfullscreen=""
-            allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
-          ></iframe>
-        </div>
-        <div class="column">
-          <iframe
-            style="border-radius: 12px"
-            src="https://open.spotify.com/embed/playlist/37i9dQZF1DX9sIqqvKsjG8?utm_source=generator"
-            width="100%"
-            height="380"
-            frameborder="0"
-            allowfullscreen=""
-            allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
-          ></iframe>
-        </div>
-      </div>
-    </div>
-    <!-- SOUND END -->
+        <!-- ABOUT END -->
 
-    <!-- TODO LIST START -->
-    <div class="content" id="todolist">
-      <h1>TODO LIST</h1>
-      <p>Add your task right here</p>
-      <table id="main-table" style="width: 100%">
-        <thead>
-          <tr>
-            <th>NAME</th>
-            <th>TASK</th>
-            <th>TIME</th>
-            <th>OPERATION</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>Example 1</td>
-            <td>Homework</td>
-            <td>60</td>
-            <td>
-              <button id="add-newrow" onclick="deleteRow(this)">Remove</button>
-            </td>
-          </tr>
-        </tbody>
-        <tfoot>
-          <tr>
-            <td><input id="item-to-add" /></td>
-            <td>
-              <form>
-                <select id="type-to-add">
-                  <option>
-                    <p></p>
-                    --Choose type of a task--
-                  </option>
-                  <option value="Homework">Homework</option>
-                  <option value="Project">Project</option>
-                  <option value="Reading">Reading</option>
-                </select>
-              </form>
-            </td>
-            <td><input type="number" id="time-to-add" /></td>
-            <td>
-              <button id="add-newrow" onclick="myFunction();">Add</button>
-            </td>
-          </tr>
-        </tfoot>
-      </table>
-    </div>
-    <!-- TODO LIST END -->
-
-    <!-- CLOCK START -->
-    <div class="content" id="clock">
-      <h1>TIMER</h1>
-      <p>
-        This web application supports voice commands using
-        <a
-          href="https://developer.mozilla.org/en-US/docs/Web/API/Web_Speech_API"
-          >Web Speech API</a
-        >, so you can use Speech Recognition.
-      </p>
-      <h2>What is the Pomodoro Technique?</h2>
-      <p>
-        The Pomodoro Technique was developed in the late 1980s by then
-        university student Francesco Cirillo. Cirillo was struggling to focus on
-        his studies and complete assignments. Feeling overwhelmed, he asked
-        himself to commit to just 10 minutes of focused study time. Encouraged
-        by the challenge, he found a tomato (pomodoro in Italian) shaped kitchen
-        timer, and the Pomodoro technique was born.
-      </p>
-      <p>
-        <a href="https://todoist.com/productivity-methods/pomodoro-technique"
-          >For more info</a
-        >
-        <br />
-      </p>
-
-      <div id="pomodoro-app">
-        <div id="container">
-          <div id="timer">
-            <div id="time">
-              <span id="minutes">25</span>
-              <span id="colon">:</span>
-              <span id="seconds">00</span>
+        <!-- SOUND START -->
+        <div class="content" id="sound">
+            <h1>SOUND</h1>
+            <h2>Cafe background sound</h2>
+            <p>There have been researches that have found The noise level in a coffee shop at 70 decibels can motivate our work. Compared to working in an environment with a noise level of 50 decibels.</p>
+            <center>
+                <figcaption>Listen to the Cafe background sound (it loops automatically.)</figcaption>
+                <audio src="bgm.mp3" controls autoplay loop></audio></center>
+            <p>References</p>
+            <ul>
+                <li><p><a href="https://www.jstor.org/stable/10.1086/665048?seq=1">Visit "Is Noise Always Bad? Exploring the Effects of Ambient Noise on Creative Cognition"</a></p></li>
+                <li><p><a href="https://well.blogs.nytimes.com/2013/06/21/how-the-hum-of-a-coffee-shop-can-boost-creativity/">Visit "How the Hum of a Coffee Shop Can Boost Creativity"</a></p></li>
+            </ul>
+            <br>
+            <h2>Music</h2>
+            <p>Listen some music while doing the task.</p>
+            <div class="row">
+                <div class="column">
+                    <iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/37i9dQZF1DWWGzo2lhvYlP?utm_source=generator" width="100%" height="380" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
+                </div>
+                <div class="column">
+                    <iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/37i9dQZF1DWWQRwui0ExPn?utm_source=generator" width="100%" height="380" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
+                </div>
+                <div class="column">
+                    <iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/37i9dQZF1DX9sIqqvKsjG8?utm_source=generator" width="100%" height="380" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
+                </div>
             </div>
-            <div id="filler"></div>
-          </div>
-          <div id="buttons">
-            <button id="work">Work</button>
-            <button id="shortBreak">Short Break</button>
-            <button id="longBreak">Long Break</button>
-            <button id="reset">Reset</button>
-          </div>
         </div>
-      </div>
-    </div>
-    <!-- CLOCK END -->
+        <!-- SOUND END -->
 
-    <!-- CHAMBER START -->
-    <div class="content" id="chamber">
-      <h1>CHAMBER</h1>
-      <p>
-        You can choose the background. These background images are from CU
-        library.
-      </p>
-      <p>We hope you enjoy working :-)</p>
-      <center>
-        <div>
-          <button
-            onclick="document.querySelector('#bg-img').src='img/background/bg1.jpeg'"
-          >
-            1
-          </button>
-          <button
-            onclick="document.querySelector('#bg-img').src='img/background/bg2.jpg'"
-          >
-            2
-          </button>
-          <button
-            onclick="document.querySelector('#bg-img').src='img/background/bg3.jpg'"
-          >
-            3
-          </button>
-          <button
-            onclick="document.querySelector('#bg-img').src='img/background/bg4.jpg'"
-          >
-            4
-          </button>
-          <button
-            onclick="document.querySelector('#bg-img').src='img/background/bg5.jpeg'"
-          >
-            5
-          </button>
-          <br /><br />
-          <button onclick="toggleFullScreen();">
-            Press enter/return to fullscreen
-          </button>
+        <!-- TODO LIST START -->
+        <div class="content" id="todolist">
+            <h1>TODO LIST</h1>
+            <p>Add your task right here</p>
+            <table id="main-table" style="width:100%">
+                <thead>
+                    <tr>
+                        <th>NAME</th>
+                        <th>TASK</th>
+                        <th>TIME</th>
+                        <th>OPERATION</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Example 1</td>
+                        <td>Homework</td>
+                        <td>60</td>
+                        <td><button id="add-newrow" onclick="deleteRow(this)">Remove</button></td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <td><input id="item-to-add"></td>
+                        <td>
+                            <form>
+                                <select id="type-to-add">
+                                    <option><p></p>--Choose type of a task--</option>
+                                    <option value="Homework">Homework</option>
+                                    <option value="Project">Project</option>
+                                    <option value="Reading">Reading</option>
+                                </select>
+                            </form>
+                        </td>
+                        <td><input type="number" id="time-to-add"></td>
+                        <td><button id="add-newrow" onclick="myFunction();">Add</button></td>
+                    </tr>
+                </tfoot>
+            </table>
         </div>
-      </center>
-      <br />
-      <!-- <video id="myvdo" width="100%" autoplay loop muted>
+        <!-- TODO LIST END -->
+
+        <!-- CLOCK START -->
+        <div class="content" id="clock">
+            <h1>TIMER</h1>
+            <p>This web application supports voice commands using <a href="https://developer.mozilla.org/en-US/docs/Web/API/Web_Speech_API">Web Speech API</a>, so you can use Speech Recognition.</p>
+            <h2>What is the Pomodoro Technique?</h2>
+            <p>The Pomodoro Technique was developed in the late 1980s by then university student Francesco Cirillo. Cirillo was struggling to focus on his studies and complete assignments. Feeling overwhelmed, he asked himself to commit to just 10 minutes of focused study time. Encouraged by the challenge, he found a tomato (pomodoro in Italian) shaped kitchen timer, and the Pomodoro technique was born.</p>
+            <p><a href="https://todoist.com/productivity-methods/pomodoro-technique">For more info</a>
+            <br>
+            <div id="pomodoro-app">
+                <div id="container">
+                    <div id="timer">
+                        <div id="time">
+                            <span id="minutes">25</span>
+                            <span id="colon">:</span>
+                            <span id="seconds">00</span>
+                        </div>
+                        <div id="filler"></div>
+                    </div>
+                    <div id="buttons">
+                        <button id="work">Work</button>
+                        <button id="shortBreak">Short Break</button>
+                        <button id="longBreak">Long Break</button>
+                        <button id="reset">Reset</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- CLOCK END -->
+        
+        <!-- SPACES START -->
+        <div class="content" id="spaces">
+            <h1>SPACES</h1>
+            <p>You can choose the background. These background images are from CU library.</p>
+            <p>We hope you enjoy working :-)</p>
+            <center>
+                <div>
+                    <button onclick="document.querySelector('#bg-img').src='img/background/bg1.jpeg'">1</button>
+                    <button onclick="document.querySelector('#bg-img').src='img/background/bg2.jpg'">2</button>
+                    <button onclick="document.querySelector('#bg-img').src='img/background/bg3.jpg'">3</button>
+                    <button onclick="document.querySelector('#bg-img').src='img/background/bg4.jpg'">4</button>
+                    <button onclick="document.querySelector('#bg-img').src='img/background/bg5.jpeg'">5</button>
+                    <br><br>
+                    <button onclick="toggleFullScreen();">Press enter/return to fullscreen</button>
+                </div>
+            </center>
+            <br>
+            <!-- <video id="myvdo" width="100%" autoplay loop muted>
                 <source src="movie.mp4" type="video/mp4">
             </video> -->
-      <img id="bg-img" src="img/background/bg1.jpeg" />
-    </div>
-    <!-- CHAMBER END -->
-  </body>
+            <img id="bg-img" src="img/background/bg1.jpeg">
+        </div>
+        <!-- SPACES END -->
+    </body>
 </html>
